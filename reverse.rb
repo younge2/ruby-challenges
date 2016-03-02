@@ -11,12 +11,13 @@ class Reversed
 
 	def greet
 		puts "enter string to be reversed"
-		str = gets.chomp
+		@str = gets.chomp
 		@stra = @str.split('')
-		for i in 0..str.length
+		for i in 0..@str.length
 			@rstra.push(@stra.pop(1))
 		end
-		puts @rstra
+		@rstr = @rstra.join
+		puts @rstr
 
 	end
 end
